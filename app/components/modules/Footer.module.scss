@@ -1,0 +1,108 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+
+    @include breakpoint(md) {
+      gap: 2rem;
+    }
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+    }
+
+    h6 {
+      margin-bottom: 1.75rem;
+    }
+  
+    .options {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      @include breakpoint(md) {
+        align-items: stretch;
+        gap: 1rem;
+      }
+
+      @include breakpoint(xs) {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+      }
+  
+      a {
+        width: 16rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.875rem;
+        border: 2px solid $color-secondary;
+        border-radius: 10px;
+        padding: 0.875rem;
+        @include transition;
+        
+        .image {
+          padding-right: 0.2rem;
+          @include transition;
+        }
+
+        &:hover {
+          .image {
+            padding-right: 0.4rem;
+            transform: rotate(15deg);
+          }
+        }
+
+        @include breakpoint(md) {
+          width: 14rem;
+        }
+
+        @include breakpoint(sm) {
+          width: 16rem;
+        }
+
+        @include breakpoint(xs) {
+          width: 16rem;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      a {
+        @include transition;
+
+        &:hover {
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+
+    @include breakpoint(sm) {
+      justify-content: center;
+      padding-bottom: 1.25rem;
+    }
+
+    @include breakpoint(xs) {
+      font-size: 0.875rem;
+    }
+  }
+}

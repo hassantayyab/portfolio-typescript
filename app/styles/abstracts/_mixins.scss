@@ -1,0 +1,40 @@
+@mixin breakpoint($breakpoint, $limit: 'max') {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @if $breakpoint == 'xl' {
+      @media only screen and (min-width: map_get($breakpoints, $breakpoint)) { @content };
+    }
+    @else if $limit == 'min' {
+      @media only screen and (min-width: map_get($breakpoints, $breakpoint)) { @content };
+    }
+    @else {
+      @media only screen and (max-width: map_get($breakpoints, $breakpoint)) { @content };
+    }
+  }
+  @else {
+    @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+      + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+@mixin content-width {
+  padding: 0 1rem;
+
+  @include breakpoint('lg', 'min') {
+    margin: 0 $container-gutter;
+  }
+
+  @include breakpoint('xl') {
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+}
+
+@mixin transition($property: all, $duration: 0.3s, $effect: ease) {
+  transition: $property $duration $effect;
+}
+
+@mixin shadow-sm {
+  box-shadow: 0 6px 12px 0 rgba($color-secondary, 0.25);
+  -webkit-box-shadow: 0 6px 12px 0 rgba($color-secondary, 0.25);
+  -moz-box-shadow: 0 6px 12px 0 rgba($color-secondary, 0.25);
+}

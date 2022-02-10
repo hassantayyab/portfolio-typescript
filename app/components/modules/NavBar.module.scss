@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.menuButton {
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  @include breakpoint(sm) {
+    display: inline-block;
+  }
+}

@@ -9,7 +9,18 @@
     "prettier/prettier": [
       "error",
       {
-        "singleQuote": true
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 80,
+        "semi": false,
+        "tabWidth": 2,
+        "useTabs": false,
+        "htmlWhitespaceSensitivity": "css",
+        "cssEnable": [
+          "css",
+          "scss",
+          "sass"
+        ]
       }
     ]
   },
@@ -42,6 +53,7 @@
             "semi": false,
             "tabWidth": 2,
             "useTabs": false,
+            "bracketSameLine": true,
             "arrowParens": "avoid"
           }
         ],

@@ -1,0 +1,18 @@
+.button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: $color-secondary;
+
+  .imageWrapper {
+    margin: 0.5rem auto 0;
+    @include transition;
+    width: 0.875rem;
+  }
+
+  &:hover {
+    .imageWrapper {
+      margin-top: 0.875rem;
+    }
+  }
+}

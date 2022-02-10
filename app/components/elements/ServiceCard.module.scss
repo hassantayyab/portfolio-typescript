@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 24rem;
+  border: 2px solid $color-secondary;
+  border-radius: 16px;
+  padding: 2.5rem;
+  background-color: $color-white;
+  text-align: center;
+
+  .image {
+    display: inline-block;
+    width: 4rem;
+    margin-bottom: 2.25rem;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+
+  @include breakpoint(xs) {
+    padding: 2rem;
+  }
+}

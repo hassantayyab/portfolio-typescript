@@ -1,0 +1,80 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  margin: 0 8rem;
+
+  @include breakpoint(xl) {
+    margin: 0 14rem;
+  }
+
+  @include breakpoint(md) {
+    gap: 2rem;
+    margin: 0;
+  }
+
+  @include breakpoint(sm) {
+    gap: 1rem;
+  }
+
+  .arrowImage {
+    width: 4rem;
+
+    @include breakpoint(sm) {
+      width: 2rem;
+    }
+  }
+
+  > div {
+    &:first-child,
+    &:last-child {
+      display: flex;
+      gap: 4rem;
+
+      @include breakpoint(md) {
+        gap: 2rem;
+      }
+    }
+
+    &:first-child {
+      align-items: flex-end;
+    }
+
+    &:last-child {
+      align-items: flex-start;
+
+      .arrowImage {
+        transform: rotate(90deg);
+      }
+    }
+
+    @include breakpoint(sm) {
+      &:first-child,
+      &:last-child {
+        flex-direction: column;
+        gap: 1.125rem;
+        align-items: center;
+
+        .arrowImage {
+          transform: rotate(45deg);
+        }
+      }
+
+
+      &:last-child {
+        .arrowImage {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  > div:nth-child(2) {
+    align-self: flex-end;
+
+    @include breakpoint(sm) {
+      align-self: center;
+    }
+  }
+}

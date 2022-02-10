@@ -1,0 +1,39 @@
+.menu {
+  display: flex;
+  gap: 1.25rem;
+  margin-right: -0.5rem;
+
+  @include breakpoint(sm) {
+    display: none;
+  }
+
+  // FIXME: This should be on link tag
+  li {
+    &.active {
+      font-weight: 600;
+    }
+
+    &::after {
+      @include transition(width, 0.5s, ease);
+
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      border-radius: 4px;
+      background-color: $color-secondary;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  a {
+    padding: 0.5rem 0.5rem 0.25rem;
+    display: inline-block;
+  }
+}

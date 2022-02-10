@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  @include breakpoint(md) {
+    gap: 2rem;
+  }
+
+  @include breakpoint(sm) {
+    gap: 4rem;
+    flex-direction: column;
+  }
+}
