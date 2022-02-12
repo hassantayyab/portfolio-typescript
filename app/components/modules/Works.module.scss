@@ -71,8 +71,8 @@
   padding: 0 0.125rem 2rem;
 
   .wrapper {
-    // display: flex;
-    // gap: 4rem;
+    display: flex;
+    gap: 4rem;
 
     @include breakpoint(xs) {
       gap: 2rem;

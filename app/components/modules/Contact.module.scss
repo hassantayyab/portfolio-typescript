@@ -1,0 +1,52 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+
+  @include breakpoint(md) {
+    gap: 2rem;
+  }
+
+  @include breakpoint(sm) {
+    justify-content: center;
+
+    > div:first-of-type {
+      display: none;
+    }
+  }
+
+  .image {
+    margin: -5rem -2rem -4rem -2rem;
+    max-width: 44rem;
+  }
+
+  .content {
+    flex-shrink: 0;
+
+    @include breakpoint(sm) {
+      flex-shrink: unset;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+  
+      input {
+        max-width: 24rem;
+        border: 2px solid $color-secondary;
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+  
+        &::placeholder {
+          color: rgba($color-secondary, 0.75);
+        }
+      }
+
+      button {
+        max-width: 24rem;
+      }
+    }
+  }
+}

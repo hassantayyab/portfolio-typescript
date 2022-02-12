@@ -10,7 +10,7 @@ import Hero from '@module/Hero'
 import NavBar from '@module/NavBar'
 import Process from '@module/Process'
 import Services from '@module/Services'
-import Works from '@template/Works'
+import Works from '@module/Works'
 
 import styles from './HomePage.module.scss'
 
@@ -28,7 +28,7 @@ const HomePage = () => {
         <header>
           <NavBar />
         </header>
-        <main className={styles.main}>
+        <main>
           <section>
             <Hero />
             <div className={styles.scrollButton}>
@@ -42,7 +42,7 @@ const HomePage = () => {
           <Works />
           <AboutMe />
         </main>
-        <footer className={styles.footer}>
+        <footer>
           <Footer />
         </footer>
       </Container>

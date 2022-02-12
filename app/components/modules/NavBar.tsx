@@ -16,8 +16,6 @@ const NavBar = () => {
       <Link href="/" passHref>
         <h4>hassan.</h4>
       </Link>
-
-      {/* TODO: MenuItems Component */}
       <Menu menus={routes} />
 
       <button type="button" className={styles.menuButton}>

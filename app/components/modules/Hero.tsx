@@ -23,7 +23,7 @@ const Hero = () => {
           I design and develop fast and pleasing websites to get <br />
           the most out of your business.
         </p>
-        <Button>
+        <Button link="/contact">
           <div>{`Let's Talk`}</div>
           <div className={styles.icon}>
             <Image src={ArrowImg} alt="arrow" />

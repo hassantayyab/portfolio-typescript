@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 4rem;
 
+  @include breakpoint(sm) {
+    text-align: center;
+  }
+
   .content {
     display: flex;
     justify-content: space-between;
@@ -13,7 +17,9 @@
     }
 
     @include breakpoint(sm) {
+      align-items: center;
       flex-direction: column;
+      gap: 2rem;
     }
 
     h6 {
@@ -94,7 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 
     @include breakpoint(sm) {
       justify-content: center;

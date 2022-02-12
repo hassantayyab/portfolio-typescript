@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import { FreeMode, Pagination } from 'swiper'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 
 import WorkCard from '@element/WorkCard'
 
@@ -21,8 +19,6 @@ interface Work {
 }
 
 const Works = () => {
-  const swiper = useSwiper()
-
   const works: Work[] = [
     {
       image: ProjectRJImg,
@@ -66,7 +62,7 @@ const Works = () => {
         </div>
 
         <div className={styles.actions}>
-          <button type="button" onClick={() => swiper.slidePrev()}>
+          <button type="button">
             <div className={styles.image}>
               <Image
                 width="24"
@@ -76,7 +72,7 @@ const Works = () => {
               />
             </div>
           </button>
-          <button type="button" onClick={() => swiper.slideNext()}>
+          <button type="button">
             <div className={styles.image}>
               <Image
                 width="24"
@@ -90,27 +86,20 @@ const Works = () => {
       </div>
 
       <div className={styles.content}>
-        <Swiper
-          className={styles.wrapper}
-          modules={[FreeMode, Pagination]}
-          freeMode={true}
-          pagination={{
-            clickable: true,
-          }}>
+        <div className={styles.wrapper}>
           {works.map(
             ({ title, image, imageAlt, description, technologies }, i) => (
-              <SwiperSlide key={i}>
-                <WorkCard
-                  title={title}
-                  technologies={technologies}
-                  image={image}
-                  imageAlt={imageAlt}>
-                  {description}
-                </WorkCard>
-              </SwiperSlide>
+              <WorkCard
+                key={i}
+                title={title}
+                technologies={technologies}
+                image={image}
+                imageAlt={imageAlt}>
+                {description}
+              </WorkCard>
             )
           )}
-        </Swiper>
+        </div>
       </div>
     </section>
   )

@@ -8,5 +8,6 @@
 }
 
 .headingAlignLeft {
+  composes: headingAlignCenter;
   text-align: left;
 }

@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build-stats": "cross-env ANALYZE=true npm run build",
+    "build-stats": "cross-env ANALYZE=true yarn build",
     "build-prod": "run-s clean build export",
     "build-types": "tsc --noEmit --pretty",
     "export": "next export",

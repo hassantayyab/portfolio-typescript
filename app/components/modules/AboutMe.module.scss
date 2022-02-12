@@ -3,6 +3,10 @@
   align-items: center;
   gap: 12rem;
 
+  @include breakpoint(lg) {
+    gap: 8rem;
+  }
+
   @include breakpoint(md) {
     gap: 4rem;
   }
