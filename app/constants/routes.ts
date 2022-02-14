@@ -1,6 +1,7 @@
 export interface Route {
   path: string
   label: string
+  hash?: string
 }
 
 export const ROUTES: Route[] = [
@@ -9,7 +10,7 @@ export const ROUTES: Route[] = [
     label: 'Home',
   },
   {
-    path: '/services',
+    path: '/#services',
     label: 'Services',
   },
   {

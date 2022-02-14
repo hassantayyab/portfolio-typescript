@@ -1,5 +1,3 @@
-import { useRef } from 'react'
-
 import Head from 'next/head'
 
 import ScrollButton from '@element/ScrollButton'
@@ -15,8 +13,6 @@ import Works from '@module/Works'
 import styles from './HomePage.module.scss'
 
 const HomePage = () => {
-  const focusElement = useRef<HTMLDivElement>(null)
-
   return (
     <>
       <Head>
@@ -32,10 +28,10 @@ const HomePage = () => {
           <section>
             <Hero />
             <div className={styles.scrollButton}>
-              <ScrollButton focusElement={focusElement} />
+              <ScrollButton />
             </div>
           </section>
-          <div ref={focusElement}>
+          <div id="services">
             <Services />
           </div>
           <Process />
