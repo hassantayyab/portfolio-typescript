@@ -1,24 +1,23 @@
 import Image from 'next/image'
 
-import { ChildrenProp } from 'types'
-
 import ArrowSmallImg from '../../../public/arrow-small.svg'
 import Badge from './Badge'
 import styles from './WorkCard.module.scss'
 
-interface Props extends ChildrenProp {
+interface Props {
+  title: string
+  description: string
   image: string
   imageAlt: string
-  title: string
   technologies?: string[]
 }
 
 const WorkCard = ({
   title,
+  description,
   technologies,
   image,
   imageAlt,
-  children,
 }: Props) => {
   return (
     <div className={styles.card}>
@@ -27,7 +26,7 @@ const WorkCard = ({
       </div>
       <div className={styles.content}>
         <h5>{title}</h5>
-        <p>{children}</p>
+        <p>{description}</p>
         <div className={styles.items}>
           {technologies &&
             technologies.map((tech, i) => <Badge key={i}>{tech}</Badge>)}

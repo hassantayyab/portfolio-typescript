@@ -5,8 +5,6 @@ import Contact from '@module/Contact'
 import Footer from '@module/Footer'
 import NavBar from '@module/NavBar'
 
-import styles from './HomePage.module.scss'
-
 const ContactPage = () => {
   return (
     <>
@@ -22,10 +20,10 @@ const ContactPage = () => {
         <header>
           <NavBar />
         </header>
-        <main className={styles.main}>
+        <main>
           <Contact />
         </main>
-        <footer className={styles.footer}>
+        <footer>
           <Footer />
         </footer>
       </Container>

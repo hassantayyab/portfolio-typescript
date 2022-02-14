@@ -33,14 +33,19 @@
       flex-direction: column;
       gap: 1.5rem;
   
-      input {
+      textarea, input {
         max-width: 24rem;
         border: 2px solid $color-secondary;
         border-radius: 8px;
-        padding: 1rem 1.25rem;
+        padding: 1rem 1.125rem;
+        font-size: 1rem;
   
         &::placeholder {
           color: rgba($color-secondary, 0.75);
+        }
+
+        &:focus {
+          outline: none;
         }
       }
 

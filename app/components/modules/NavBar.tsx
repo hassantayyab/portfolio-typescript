@@ -12,7 +12,6 @@ const NavBar = () => {
 
   return (
     <nav className={styles.nav}>
-      {/* TODO: Logo Component */}
       <Link href="/" passHref>
         <h4>hassan.</h4>
       </Link>

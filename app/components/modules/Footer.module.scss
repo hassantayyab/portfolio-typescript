@@ -19,7 +19,7 @@
     @include breakpoint(sm) {
       align-items: center;
       flex-direction: column;
-      gap: 2rem;
+      gap: 3rem;
     }
 
     h6 {
@@ -68,10 +68,6 @@
 
         @include breakpoint(md) {
           width: 14rem;
-        }
-
-        @include breakpoint(sm) {
-          width: 16rem;
         }
 
         @include breakpoint(xs) {

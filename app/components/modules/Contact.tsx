@@ -26,8 +26,8 @@ const Contact = () => {
           <input placeholder="Email" />
           <input placeholder="Budget" />
           <input placeholder="Timeline" />
-          <input placeholder="Message" />
-          <Button>Send</Button>
+          <textarea placeholder="Message" rows={3}></textarea>
+          <Button type="submit">Send</Button>
         </form>
       </div>
     </section>
