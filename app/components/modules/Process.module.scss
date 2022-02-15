@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 4rem;
-  margin: 0 8rem;
+  margin: 0 6rem;
 
   @include breakpoint(xl) {
-    margin: 0 14rem;
+    margin: 0 10rem;
   }
 
   @include breakpoint(md) {
