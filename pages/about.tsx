@@ -1,5 +1,5 @@
-const about = () => {
-  return <div>About Page</div>
-}
+import AboutPage from '@template/AboutPage'
+
+const about = () => <AboutPage />
 
 export default about

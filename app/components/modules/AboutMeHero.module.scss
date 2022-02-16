@@ -1,0 +1,70 @@
+.aboutMeHero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18rem;
+
+  @media only screen and (max-width: 1450px) and (min-width: 1199px) {
+    gap: 8rem;
+  }
+
+  @include breakpoint(lg) {
+    gap: 6rem;
+  }
+
+  @include breakpoint(md) {
+    gap: 4rem;
+  }
+
+  @include breakpoint(sm) {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .content {
+    flex-basis: 60%;
+
+    @include breakpoint(sm) {
+      text-align: center;
+    }
+
+    h2 {
+      line-height: 1.2;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    // TODO: Extract this css as it is same as button component.
+    a {
+      display: inline-block;
+      font-size: 0.875rem;
+      color: $color-primary;
+      background-color: $color-secondary;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      padding: 0.875rem 1.5rem;
+      @include transition;
+    
+      &:hover,
+      &:focus {
+        @include shadow-sm;
+        transform: scale(1.025);
+      }
+    }
+  }
+
+  .image {
+    flex-basis: 40%;
+    text-align: right;
+
+    @include breakpoint(sm) {
+      max-width: 24rem;
+    }
+  }
+}
