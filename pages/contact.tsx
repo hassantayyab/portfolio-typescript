@@ -1,5 +1,7 @@
+import { NextPage } from 'next'
+
 import ContactPage from '@template/ContactPage'
 
-const contact = () => <ContactPage />
+const Contact: NextPage = () => <ContactPage />
 
-export default contact
+export default Contact

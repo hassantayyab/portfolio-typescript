@@ -1,5 +1,7 @@
+import { NextPage } from 'next'
+
 import AboutPage from '@template/AboutPage'
 
-const about = () => <AboutPage />
+const About: NextPage = () => <AboutPage />
 
-export default about
+export default About

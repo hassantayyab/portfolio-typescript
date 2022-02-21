@@ -1,0 +1,49 @@
+.section {
+  h3 {
+    margin-bottom: 4rem;
+  }
+
+  h6 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 16rem;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .description {
+      flex-basis: 50%;
+
+      p {
+        margin-bottom: 1.5rem;
+      }
+
+      button {
+        .icon {
+          filter: brightness(100);
+          @include transition;
+        }
+  
+        &:hover,
+        &:focus {
+          .icon {
+            transform: translateX(4px);
+          }
+        }
+      }
+    }
+  }
+
+  .image {
+    margin-top: 6rem;
+  }
+}

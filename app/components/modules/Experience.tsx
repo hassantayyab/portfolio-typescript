@@ -1,10 +1,10 @@
 import ExperienceCard from '@element/ExperienceCard'
-import { Experience as ExperienceType } from 'types'
+import { IExperience } from 'types'
 
 import styles from './Experience.module.scss'
 
 const Experience = () => {
-  const experiences: ExperienceType[] = [
+  const experiences: IExperience[] = [
     {
       company: 'Remberg GmbH',
       years: '2022 - Present',
@@ -40,9 +40,7 @@ const Experience = () => {
 
   return (
     <section className={styles.section}>
-      <div className={styles.heading}>
-        <h3>Experience</h3>
-      </div>
+      <h3 className={styles.heading}>Experience</h3>
 
       <div className={styles.content}>
         {experiences.map((experience, i) => (
