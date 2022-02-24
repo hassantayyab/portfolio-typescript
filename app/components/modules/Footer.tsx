@@ -1,52 +1,16 @@
 import Image from 'next/image'
 
 import { ROUTES } from '@constant/routes'
+import { SOCIALS } from '@constant/socials'
 import Menu from '@element/Menu'
 
-import DribbbleImg from '../../../public/dribbble.svg'
 import EmailImg from '../../../public/email.svg'
-import GitHubImg from '../../../public/github.svg'
-import InstagramImg from '../../../public/instagram.svg'
-import LinkedInImg from '../../../public/linkedin.svg'
-import TwitterImg from '../../../public/twitter.svg'
 import WhatsappImg from '../../../public/whatsapp.svg'
 import styles from './Footer.module.scss'
 
-interface Socials {
-  image: string
-  title: string
-  link: string
-}
-
 const Footer = () => {
   const routes = ROUTES
-  const socials: Socials[] = [
-    {
-      image: InstagramImg,
-      title: 'Instagram',
-      link: 'https://www.instagram.com/hassan.t.dogar/',
-    },
-    {
-      image: GitHubImg,
-      title: 'GitHub',
-      link: 'https://github.com/hassantayyab',
-    },
-    {
-      image: TwitterImg,
-      title: 'Twitter',
-      link: 'https://twitter.com/htdogar',
-    },
-    {
-      image: DribbbleImg,
-      title: 'Dribbble',
-      link: 'https://dribbble.com/hassantayyab',
-    },
-    {
-      image: LinkedInImg,
-      title: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/hassan-tayyab-91b2a8157/',
-    },
-  ]
+  const socials = SOCIALS
 
   return (
     <section className={styles.footer}>

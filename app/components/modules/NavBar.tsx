@@ -14,14 +14,14 @@ import styles from './NavBar.module.scss'
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const nav = useRef<HTMLElement>(null)
+  const mobileNavRef = useRef<HTMLElement>(null)
   const routes = ROUTES
 
   useEffect(() => {
     if (isOpen) {
-      disableBodyScroll(nav.current!)
+      disableBodyScroll(mobileNavRef.current!)
     } else {
-      enableBodyScroll(nav.current!)
+      enableBodyScroll(mobileNavRef.current!)
     }
   }, [isOpen])
 
@@ -45,8 +45,12 @@ const NavBar = () => {
       </div>
 
       {isOpen && (
-        <nav ref={nav}>
-          <MobileMenu menus={routes} />
+        <nav ref={mobileNavRef}>
+          <MobileMenu
+            menus={routes}
+            navRef={mobileNavRef}
+            setIsOpen={setIsOpen}
+          />
         </nav>
       )}
     </>
