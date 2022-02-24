@@ -1,7 +1,6 @@
 export interface Route {
   path: string
   label: string
-  hash?: string
 }
 
 export const ROUTES: Route[] = [

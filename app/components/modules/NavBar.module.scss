@@ -1,4 +1,6 @@
 .nav {
+  position: relative;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +16,8 @@
   background: transparent;
   border: none;
   outline: none;
+  width: 2rem;
+  height: 2rem;
 
   @include breakpoint(sm) {
     display: inline-block;
