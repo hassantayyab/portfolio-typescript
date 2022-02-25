@@ -21,7 +21,7 @@ const NavBar = () => {
     if (isOpen) {
       disableBodyScroll(mobileNavRef.current!)
     } else {
-      enableBodyScroll(mobileNavRef.current!)
+      enableBodyScroll(document.body)
     }
   }, [isOpen])
 
@@ -46,11 +46,7 @@ const NavBar = () => {
 
       {isOpen && (
         <nav ref={mobileNavRef}>
-          <MobileMenu
-            menus={routes}
-            navRef={mobileNavRef}
-            setIsOpen={setIsOpen}
-          />
+          <MobileMenu menus={routes} setIsOpen={setIsOpen} />
         </nav>
       )}
     </>

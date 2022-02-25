@@ -1,4 +1,4 @@
-import { MouseEvent, RefObject } from 'react'
+import { MouseEvent } from 'react'
 
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -12,7 +12,6 @@ import styles from './MobileMenu.module.scss'
 
 interface Props {
   menus: Route[]
-  navRef: RefObject<HTMLElement>
   setIsOpen(v: boolean): void
 }
 
@@ -48,8 +47,8 @@ const MobileMenu = ({ menus, setIsOpen }: Props) => {
               <Image
                 src={EmailImg}
                 alt="click to email"
-                width={24}
-                height={24}
+                width={28}
+                height={28}
               />
             </span>
             <span>hassandogar9@gmail.com</span>
@@ -59,8 +58,8 @@ const MobileMenu = ({ menus, setIsOpen }: Props) => {
               <Image
                 src={WhatsappImg}
                 alt="click to whatsapp"
-                width={24}
-                height={24}
+                width={28}
+                height={28}
               />
             </span>
             <span>{`Let's Whatsapp`}</span>
