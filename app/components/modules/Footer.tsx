@@ -53,12 +53,7 @@ const Footer = () => {
           <div className={styles.socials}>
             {socials.map((social, i) => (
               <a key={i} href={social.link} target="_blank" rel="noreferrer">
-                <Image
-                  src={social.image}
-                  alt="Click to go to page"
-                  width={28}
-                  height={28}
-                />
+                <Image src={social.image} alt="Click to go to page" />
               </a>
             ))}
           </div>

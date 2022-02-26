@@ -22,6 +22,10 @@
       gap: 3rem;
     }
 
+    > div {
+      width: 100%;
+    }
+
     h6 {
       margin-bottom: 1.75rem;
     }
@@ -36,10 +40,10 @@
         gap: 1rem;
       }
 
-      @include breakpoint(xs) {
+      @include breakpoint(sm) {
         flex-direction: column;
         gap: 1.5rem;
-        align-items: flex-start;
+        align-items: center;
       }
   
       a {
@@ -55,13 +59,13 @@
         @include transition;
         
         .image {
-          padding-right: 0.2rem;
+          padding-right: 0.5rem;
           @include transition;
         }
 
         &:hover {
           .image {
-            padding-right: 0.4rem;
+            padding-right: 0.7rem;
             transform: rotate(15deg);
           }
         }
@@ -70,8 +74,14 @@
           width: 14rem;
         }
 
+        @include breakpoint(sm) {
+          padding: 1rem;
+          width: 20rem;
+        }
+
         @include breakpoint(xs) {
-          width: 16rem;
+          padding: 1rem;
+          width: 75%;
           max-width: 100%;
         }
       }
@@ -83,10 +93,21 @@
       gap: 1.5rem;
 
       a {
+        width: 1.75rem;
+        height: 1.75rem;
         @include transition;
 
         &:hover {
           transform: scale(1.15);
+        }
+      }
+
+      @include breakpoint(sm) {
+        justify-content: center;
+
+        a {
+          width: 2.25rem;
+          height: 2.25rem;
         }
       }
     }

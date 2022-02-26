@@ -33,7 +33,7 @@ const AboutMeHero = () => {
         </a>
       </div>
       <div className={styles.image}>
-        <Image src={MeImg} alt="About Me" />
+        <Image src={MeImg} alt="About Me" priority />
       </div>
     </section>
   )
