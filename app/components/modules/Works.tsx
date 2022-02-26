@@ -1,15 +1,19 @@
 import Image from 'next/image'
+import { Swiper as ISwiper } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
+import { SWIPER_OPTIONS } from '@constant/swiper-options'
 import { WORKS } from '@constant/works'
 import WorkCard from '@element/WorkCard'
 
 import 'swiper/css'
-import 'swiper/css/free-mode'
 
 import SlideArrowImg from '../../../public/slide-arrow.svg'
 import styles from './Works.module.scss'
 
 const Works = () => {
+  let swiper: ISwiper
+  const swiperOptions = SWIPER_OPTIONS
   const works = WORKS
 
   return (
@@ -21,7 +25,7 @@ const Works = () => {
         </div>
 
         <div className={styles.actions}>
-          <button type="button">
+          <button type="button" onClick={() => swiper.slidePrev()}>
             <div className={styles.image}>
               <Image
                 width="24"
@@ -31,7 +35,7 @@ const Works = () => {
               />
             </div>
           </button>
-          <button type="button">
+          <button type="button" onClick={() => swiper.slideNext()}>
             <div className={styles.image}>
               <Image
                 width="24"
@@ -46,9 +50,17 @@ const Works = () => {
 
       <div className={styles.content}>
         <div className={styles.wrapper}>
-          {works.map((work, i) => (
-            <WorkCard key={i} {...work} />
-          ))}
+          <Swiper
+            {...swiperOptions}
+            onSwiper={s => {
+              swiper = s
+            }}>
+            {works.map((work, i) => (
+              <SwiperSlide key={i}>
+                <WorkCard {...work} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
