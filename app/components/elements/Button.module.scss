@@ -12,8 +12,7 @@
   padding: 0.875rem 1.5rem;
   @include transition;
 
-  &:hover,
-  &:focus {
+  &:hover {
     @include shadow-sm;
     transform: scale(1.025);
   }

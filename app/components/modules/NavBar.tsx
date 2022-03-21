@@ -27,7 +27,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className={styles.nav}>
+      <div className={styles.navBar}>
         <Link href="/" passHref>
           <h4>hassan.</h4>
         </Link>
@@ -44,11 +44,13 @@ const NavBar = () => {
         </button>
       </div>
 
-      {isOpen && (
-        <nav ref={mobileNavRef}>
-          <MobileMenu menus={routes} setIsOpen={setIsOpen} />
-        </nav>
-      )}
+      <nav
+        ref={mobileNavRef}
+        className={`
+        ${styles.mobileNav} 
+        ${isOpen && styles.open}`}>
+        <MobileMenu menus={routes} isOpen={isOpen} setIsOpen={setIsOpen} />
+      </nav>
     </>
   )
 }

@@ -1,4 +1,4 @@
-.nav {
+.navBar {
   position: relative;
   z-index: 2;
   display: flex;
@@ -21,5 +21,22 @@
 
   @include breakpoint(sm) {
     display: inline-block;
+  }
+}
+
+.mobileNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: $color-primary;
+  height: 0;
+  overflow: hidden;
+  @include transition(height, 0.3s);
+
+  &.open {
+    height: calc(100% + 12%);
+    padding: 0 1rem 8% 1rem;
   }
 }
