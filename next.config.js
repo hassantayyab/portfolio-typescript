@@ -22,6 +22,7 @@ module.exports = {
     prependData: `
     @import "abstracts/variables.scss";
     @import "abstracts/mixins.scss";
+    @import "base/animations.scss";
   `,
   },
 }

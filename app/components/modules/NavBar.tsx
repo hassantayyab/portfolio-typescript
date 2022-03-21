@@ -39,8 +39,18 @@ const NavBar = () => {
           type="button"
           className={styles.menuButton}
           onClick={() => setIsOpen(!isOpen)}>
-          {!isOpen && <Image src={HamburgerImg} alt="open menu" />}
-          {isOpen && <Image src={CrossImg} alt="close menu" />}
+          <div
+            className={`${styles.hamburger} ${isOpen && styles.close} ${
+              !isOpen && styles.open
+            }`}>
+            <Image src={HamburgerImg} alt="open menu" />
+          </div>
+          <div
+            className={`${styles.cross} ${isOpen && styles.open} ${
+              !isOpen && styles.close
+            }`}>
+            <Image src={CrossImg} alt="close menu" />
+          </div>
         </button>
       </div>
 
