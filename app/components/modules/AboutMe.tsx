@@ -17,9 +17,10 @@ const AboutMe = () => {
             help them achieve their goals.
           </span>
           <span>
-            My name is Hassan Tayyab. I am a web designer and developer with a
-            deep passion for this craft. I love to solve business problems and
-            help them achieve their goals.
+            I am passionate about my caft with the mission to create fast and
+            great looking websites for business in order to boost their sales,
+            as well as leaving a pleasant and satisfying experience for their
+            users.
           </span>
         </p>
 

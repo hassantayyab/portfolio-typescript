@@ -5,6 +5,7 @@ export interface ChildrenProp {
 export interface IExperience {
   company: string
   years: string
+  location: string
   designation: string
   description: string
   technologies: string[]

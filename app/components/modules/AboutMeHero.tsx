@@ -21,7 +21,7 @@ const AboutMeHero = () => {
             users.
           </span>
           <span>
-            I love to use best and modern industry tools and methodolgies to
+            I love to use best and modern industry tools and methodologies to
             deliver up to date work with no compromise on the quality of work
             and satisfaction of the client.
           </span>

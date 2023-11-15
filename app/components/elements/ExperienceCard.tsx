@@ -8,13 +8,17 @@ interface Props extends IExperience {}
 const ExperienceCard = ({
   company,
   years,
+  location,
   designation,
   description,
   technologies,
 }: Props) => (
   <div className={styles.card}>
     <div className={styles.header}>
-      <h5>{company}</h5>
+      <div>
+        <h5>{company}</h5>
+        <span>({location})</span>
+      </div>
       <span>{years}</span>
     </div>
     <h6>{designation}</h6>

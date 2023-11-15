@@ -8,14 +8,16 @@ const Experience = () => {
     {
       company: 'remberg GmbH',
       years: '2022 - Present',
+      location: 'München, Germany',
       designation: 'Software Engineer',
       description:
-        'EXTEDO is a software company responsible for software solutions for pharmaceutical agencies. Worked as a Software engineer for the eSUBmanager web application.',
+        'I served as a full-stack developer, focusing on high-quality code for both frontend and backend, accompanied by thorough e2e, unit, and API testing. Additionally, I handled mobile development using Ionic and our own libraries like a PDF rendering one, involving JavaScript coding with Handlebars templating. Alongside coding responsibilities, I actively participated in code reviews, technical planning, grooming sessions, and regular reviews.',
       technologies: [
         'Angular',
         'Typescript',
-        'NestJs',
-        'Nodejs',
+        'NestJS',
+        'Node.js',
+        'Ionic',
         'MongoDB',
         'Cypress',
         'Jest',
@@ -25,17 +27,19 @@ const Experience = () => {
     {
       company: 'EXTEDO GmbH',
       years: '2020 - 2022',
+      location: 'Ottobrunn, Germany',
       designation: 'Software Engineer',
       description:
-        'EXTEDO is a software company responsible for software solutions for pharmaceutical agencies. Worked as a Software engineer for the eSUBmanager web application.',
+        'I served as a frontend developer for the application, where my responsibilities encompassed UI and feature development, along with the implementation of unit tests.',
       technologies: ['Angular', 'Typescript', 'Jasmine', 'NgRx'],
     },
     {
       company: 'DevStudio',
       years: '2018 - 2020',
+      location: 'Lahore, Germany',
       designation: 'MEAN Stack Developer',
       description:
-        'EXTEDO is a software company responsible for software solutions for pharmaceutical agencies. Worked as a Software engineer for the eSUBmanager web application.',
+        'Courier/package delivery service. I was responsible for complete frontend development of 4 portals: Sender, Traveller, Enterprise and Admin Portals.',
       technologies: ['Angular', 'Typescript', 'Ionic'],
     },
   ]

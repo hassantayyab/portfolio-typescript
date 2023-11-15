@@ -18,9 +18,20 @@
     align-items: center;
     margin-bottom: 2rem;
 
-    h5 {
+   div {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+
+     h5 {
       font-weight: 500;
     }
+
+    span {
+      font-size: 0.875rem;
+      font-weight: lighter;
+    }
+   }
 
     span {
       font-size: 0.9375rem;
