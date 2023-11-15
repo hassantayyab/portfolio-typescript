@@ -48,19 +48,17 @@ const Works = () => {
         </div>
       </div>
 
-      <div className={styles.content}>
-        <Swiper
-          {...swiperOptions}
-          onSwiper={s => {
-            swiper = s
-          }}>
-          {works.map((work, i) => (
-            <SwiperSlide key={i}>
-              <WorkCard {...work} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      <Swiper
+        {...swiperOptions}
+        onSwiper={s => {
+          swiper = s
+        }}>
+        {works.map((work, i) => (
+          <SwiperSlide key={i}>
+            <WorkCard {...work} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   )
 }

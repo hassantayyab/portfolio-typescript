@@ -41,20 +41,33 @@
 
     // TODO: Extract this css as it is same as button component.
     a {
-      display: inline-block;
-      font-size: 0.875rem;
+      display: inline-flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.5rem;
       color: $color-primary;
       background-color: $color-secondary;
       outline: none;
       border: none;
       border-radius: 10px;
-      padding: 0.875rem 1.5rem;
+      padding: 1rem 2rem;
       @include transition;
     
-      &:hover,
-      &:focus {
+      &:hover {
         @include shadow-sm;
         transform: scale(1.025);
+      }
+
+      .icon {
+        width: 1rem;
+        margin-top: 1px;
+        @include transition;
+      }
+
+      &:hover {
+        .icon {
+          transform: translateX(4px);
+        }
       }
     }
   }

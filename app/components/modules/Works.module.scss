@@ -40,7 +40,7 @@
       &:first-of-type {
         &:hover {
           .image {
-            transform: rotate(180deg) translateX(4px);
+            transform: rotate(180deg) translateX(3px);
           }
         }
       }
@@ -52,7 +52,7 @@
 
         &:hover {
           .image {
-            transform: translateX(4px);
+            transform: translateX(3px);
           }
         }
       }

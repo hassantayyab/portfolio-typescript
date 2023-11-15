@@ -6,7 +6,7 @@ import styles from './Experience.module.scss'
 const Experience = () => {
   const experiences: IExperience[] = [
     {
-      company: 'Remberg GmbH',
+      company: 'remberg GmbH',
       years: '2022 - Present',
       designation: 'Software Engineer',
       description:
@@ -14,10 +14,12 @@ const Experience = () => {
       technologies: [
         'Angular',
         'Typescript',
-        'Nestjs',
+        'NestJs',
         'Nodejs',
-        'NoSql',
         'MongoDB',
+        'Cypress',
+        'Jest',
+        'Jasmine',
       ],
     },
     {

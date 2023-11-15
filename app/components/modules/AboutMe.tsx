@@ -13,12 +13,12 @@ const AboutMe = () => {
         <p>
           <span>
             My name is Hassan Tayyab. I am a web designer and developer with a
-            deep passion for this craft. I love to solve businsess problems and
+            deep passion for this craft. I love to solve business problems and
             help them achieve their goals.
           </span>
           <span>
             My name is Hassan Tayyab. I am a web designer and developer with a
-            deep passion for this craft. I love to solve businsess problems and
+            deep passion for this craft. I love to solve business problems and
             help them achieve their goals.
           </span>
         </p>

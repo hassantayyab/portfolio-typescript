@@ -19,11 +19,12 @@
 
     button {
       .icon {
+        width: 1rem;
+        margin-top: 1px;
         @include transition;
       }
 
-      &:hover,
-      &:focus {
+      &:hover {
         .icon {
           transform: translateX(4px);
         }
@@ -54,10 +55,5 @@
 
   .image {
     max-width: 32rem;
-  }
-
-  .icon {
-    width: 0.875rem;
-    margin-top: 1px;
   }
 }
