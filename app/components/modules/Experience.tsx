@@ -36,7 +36,7 @@ const Experience = () => {
     {
       company: 'DevStudio',
       years: '2018 - 2020',
-      location: 'Lahore, Germany',
+      location: 'Lahore, Pakistan',
       designation: 'MEAN Stack Developer',
       description:
         'Courier/package delivery service. I was responsible for complete frontend development of 4 portals: Sender, Traveller, Enterprise and Admin Portals.',
