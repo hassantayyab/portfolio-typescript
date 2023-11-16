@@ -34,7 +34,7 @@ const Footer = () => {
               </span>
               <span>hassandogar9@gmail.com</span>
             </a>
-            <a href="tel:+4915226129682">
+            <a href="https://wa.me/+4915226129682">
               <span className={styles.image}>
                 <Image
                   src={WhatsappImg}
