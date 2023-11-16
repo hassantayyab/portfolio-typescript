@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <section className={styles.footer}>
-      <h3>Are You Ready to Take the First Step?</h3>
+      <h3>Are you ready to take the first step?</h3>
 
       <section className={styles.content}>
         <div>
