@@ -55,12 +55,8 @@ const Process = () => {
               {description}
             </ProcessCard>
           ) : (
-            <div>
-              <ProcessCard
-                key={title}
-                title={title}
-                image={image}
-                imageAlt={imageAlt}>
+            <div key={title}>
+              <ProcessCard title={title} image={image} imageAlt={imageAlt}>
                 {description}
               </ProcessCard>
               <div className={styles.arrowImage}>
