@@ -9,7 +9,7 @@ const AboutMeHero = () => {
     <section className={styles.aboutMeHero}>
       <div className={styles.content}>
         <h2>
-          Hi! My name is Hassan.
+          {`Hi! I'm Hassan.`}
           <br />
           I&apos;m a web designer & developer.
         </h2>
