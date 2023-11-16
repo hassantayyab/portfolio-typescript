@@ -43,7 +43,7 @@ const Footer = () => {
                   height={24}
                 />
               </span>
-              <span>{`Let's Whatsapp`}</span>
+              <span>+49 1522 6129682</span>
             </a>
           </div>
         </div>
