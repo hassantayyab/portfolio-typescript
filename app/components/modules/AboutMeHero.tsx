@@ -31,7 +31,7 @@ const AboutMeHero = () => {
           href="https://drive.google.com/file/d/1xbVqjjKushpGkfD84CNqGlouTQd65Wip/view?usp=sharing"
           target="_blank"
           rel="noreferrer">
-          Resume{' '}
+          View CV{' '}
           <div className={styles.icon}>
             <Image src={ArrowImg} alt="arrow" />
           </div>
