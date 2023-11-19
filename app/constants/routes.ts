@@ -21,7 +21,7 @@ export const ROUTES: Route[] = [
     label: 'About',
   },
   {
-    path: '/contact',
+    path: '/#footer',
     label: 'Contact',
   },
 ]

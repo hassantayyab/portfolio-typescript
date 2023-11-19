@@ -41,7 +41,7 @@ const HomePage = () => {
           <Works />
           <AboutMe />
         </main>
-        <footer>
+        <footer id="footer">
           <Footer />
         </footer>
       </Container>
