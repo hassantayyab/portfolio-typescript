@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { resumeLink } from '@constant/resume-link'
+
 import ArrowImg from '../../../public/arrow.svg'
 import MeImg from '../../../public/me.svg'
 import styles from './AboutMeHero.module.scss'
@@ -27,10 +29,7 @@ const AboutMeHero = () => {
           </span>
         </p>
 
-        <a
-          href="https://drive.google.com/file/d/1xbVqjjKushpGkfD84CNqGlouTQd65Wip/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer">
+        <a href={resumeLink} target="_blank" rel="noreferrer">
           View CV{' '}
           <div className={styles.icon}>
             <Image src={ArrowImg} alt="arrow" />
