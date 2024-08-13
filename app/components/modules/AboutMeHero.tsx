@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { resumeLink } from '@constant/resume-link';
 
 import ArrowImg from '../../../public/arrow.svg';
-import MeImg from '../../../public/me.svg';
+import MeImg from '../../../public/me.png';
 import styles from './AboutMeHero.module.scss';
 
 const AboutMeHero = () => {

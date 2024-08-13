@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Button from '@element/Button';
 
 import ArrowImg from '../../../public/arrow.svg';
-import AboutMeImg from '../../../public/me.svg';
+import AboutMeImg from '../../../public/me.png';
 import styles from './Hero.module.scss';
 
 const Hero = () => {

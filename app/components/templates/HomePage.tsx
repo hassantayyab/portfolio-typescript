@@ -31,9 +31,9 @@ const HomePage = () => {
         <main>
           <section>
             <Hero />
-            <div className={styles.scrollButton}>
+            {/* <div className={styles.scrollButton}>
               <ScrollButton />
-            </div>
+            </div> */}
           </section>
           {/* <div id="services">
             <Services />
