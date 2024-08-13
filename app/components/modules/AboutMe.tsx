@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import Button from '@element/Button';
 
-import AboutMeImg from '../../../public/me.svg';
+import AboutMeImg from '../../../public/me.png';
 import styles from './AboutMe.module.scss';
 
 const AboutMe = () => {

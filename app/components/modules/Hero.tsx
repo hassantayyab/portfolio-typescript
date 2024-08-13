@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Button from '@element/Button';
 
 import ArrowImg from '../../../public/arrow.svg';
-import HeroImg from '../../../public/hero-img.svg';
+import AboutMeImg from '../../../public/me.svg';
 import styles from './Hero.module.scss';
 
 const Hero = () => {
@@ -29,7 +29,7 @@ const Hero = () => {
         </Button>
       </div>
       <div className={styles.image}>
-        <Image src={HeroImg} alt='hero image' />
+        <Image src={AboutMeImg} alt='hero image' />
       </div>
     </div>
   );

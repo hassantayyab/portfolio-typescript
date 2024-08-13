@@ -11,6 +11,7 @@ import Services from '@module/Services'
 import Works from '@module/Works'
 
 import styles from './HomePage.module.scss'
+import AboutMeHero from '@module/AboutMeHero'
 
 const HomePage = () => {
   return (
