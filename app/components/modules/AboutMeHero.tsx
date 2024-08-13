@@ -1,10 +1,10 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
-import { resumeLink } from '@constant/resume-link'
+import { resumeLink } from '@constant/resume-link';
 
-import ArrowImg from '../../../public/arrow.svg'
-import MeImg from '../../../public/me.svg'
-import styles from './AboutMeHero.module.scss'
+import ArrowImg from '../../../public/arrow.svg';
+import MeImg from '../../../public/me.svg';
+import styles from './AboutMeHero.module.scss';
 
 const AboutMeHero = () => {
   return (
@@ -13,34 +13,36 @@ const AboutMeHero = () => {
         <h2>
           {`Hi! I'm Hassan.`}
           <br />
-          I&apos;m a web designer & developer.
+          I&apos;m a frontend engineer.
         </h2>
         <p>
           <span>
-            I am passionate about my caft with the mission to create fast and
-            great looking websites for business in order to boost their sales,
-            as well as leaving a pleasant and satisfying experience for their
-            users.
+            I have a deep passion for this craft. I love to solve businesses problems and help them
+            achieve their goals.
           </span>
           <span>
-            I love to use best and modern industry tools and methodologies to
-            deliver up to date work with no compromise on the quality of work
-            and satisfaction of the client.
+            I am passionate about my caft with the mission to create scalable and great looking
+            websites for businesses in order to boost their sales, as well as leaving a pleasant and
+            satisfying experience for their users.
+          </span>
+          <span>
+            I love to use best and modern industry tools and methodologies to deliver up to date
+            work with no compromise on the quality of work.
           </span>
         </p>
 
-        <a href={resumeLink} target="_blank" rel="noreferrer">
+        <a href={resumeLink} target='_blank' rel='noreferrer'>
           View CV{' '}
           <div className={styles.icon}>
-            <Image src={ArrowImg} alt="arrow" />
+            <Image src={ArrowImg} alt='arrow' />
           </div>
         </a>
       </div>
       <div className={styles.image}>
-        <Image src={MeImg} alt="About Me" priority />
+        <Image src={MeImg} alt='About Me' priority />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutMeHero
+export default AboutMeHero;

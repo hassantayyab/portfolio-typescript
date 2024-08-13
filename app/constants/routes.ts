@@ -8,10 +8,10 @@ export const ROUTES: Route[] = [
     path: '/',
     label: 'Home',
   },
-  {
-    path: '/#services',
-    label: 'Services',
-  },
+  // {
+  //   path: '/#services',
+  //   label: 'Services',
+  // },
   {
     path: '/works',
     label: 'Works',

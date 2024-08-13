@@ -34,10 +34,10 @@ const HomePage = () => {
               <ScrollButton />
             </div>
           </section>
-          <div id="services">
+          {/* <div id="services">
             <Services />
-          </div>
-          <Process />
+          </div> */}
+          {/* <Process /> */}
           <Works />
           <AboutMe />
         </main>

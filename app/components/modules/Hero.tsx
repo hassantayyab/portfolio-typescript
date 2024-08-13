@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-import Image from 'next/image'
+import Image from 'next/image';
 
-import Button from '@element/Button'
+import Button from '@element/Button';
 
-import ArrowImg from '../../../public/arrow.svg'
-import HeroImg from '../../../public/hero-img.svg'
-import styles from './Hero.module.scss'
+import ArrowImg from '../../../public/arrow.svg';
+import HeroImg from '../../../public/hero-img.svg';
+import styles from './Hero.module.scss';
 
 const Hero = () => {
   return (
@@ -14,27 +14,25 @@ const Hero = () => {
       <div className={styles.content}>
         <span>Hey there!</span>
         <h1>
-          Let’s Create <br />
-          an Awesome Website <br />
-          For Your Business
+          I am Hassan <br />
         </h1>
         <p>
-          My name is Hassan. I am a web designer and developer. <br />
-          I design and develop fast and pleasing websites to get <br />
-          the most out of your business.
+          I am an expert frontend engineer <br />
+          with 6+ years of experience in building responsive <br />
+          and scalable web applications using Angular and React.
         </p>
-        <Button link="/#footer">
+        <Button link='/#footer'>
           <div>{`Let's Talk`}</div>
           <div className={styles.icon}>
-            <Image src={ArrowImg} alt="arrow" />
+            <Image src={ArrowImg} alt='arrow' />
           </div>
         </Button>
       </div>
       <div className={styles.image}>
-        <Image src={HeroImg} alt="hero image" />
+        <Image src={HeroImg} alt='hero image' />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

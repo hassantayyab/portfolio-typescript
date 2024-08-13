@@ -23,7 +23,7 @@ const AboutPage = () => {
         </header>
         <main>
           <AboutMeHero />
-          <Experience />
+          {/* <Experience /> */}
         </main>
         <footer>
           <Footer />
