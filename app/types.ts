@@ -15,6 +15,7 @@ export interface IWork {
   id: string
   title: string
   description: string
+  websiteLink: string
   image: string
   imageAlt: string
   client: string

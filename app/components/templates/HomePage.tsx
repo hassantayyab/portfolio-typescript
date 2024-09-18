@@ -1,17 +1,17 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-import ScrollButton from '@element/ScrollButton'
-import Container from '@layout/Container'
-import AboutMe from '@module/AboutMe'
-import Footer from '@module/Footer'
-import Hero from '@module/Hero'
-import NavBar from '@module/NavBar'
-import Process from '@module/Process'
-import Services from '@module/Services'
-import Works from '@module/Works'
+import ScrollButton from '@element/ScrollButton';
+import Container from '@layout/Container';
+import AboutMe from '@module/AboutMe';
+import Footer from '@module/Footer';
+import Hero from '@module/Hero';
+import NavBar from '@module/NavBar';
+import Process from '@module/Process';
+import Services from '@module/Services';
+import Works from '@module/Works';
 
-import styles from './HomePage.module.scss'
-import AboutMeHero from '@module/AboutMeHero'
+import styles from './HomePage.module.scss';
+import AboutMeHero from '@module/AboutMeHero';
 
 const HomePage = () => {
   return (
@@ -19,10 +19,10 @@ const HomePage = () => {
       <Head>
         <title>Hassan Tayyab | Web Designer & Developer</title>
         <meta
-          name="description"
-          content="My name is Hassan and I am a web designer and developer"
+          name='description'
+          content='My name is Hassan and I am a web designer and developer'
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Container>
         <header>
@@ -42,12 +42,12 @@ const HomePage = () => {
           <Works />
           <AboutMe />
         </main>
-        <footer id="footer">
+        <footer id='footer'>
           <Footer />
         </footer>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

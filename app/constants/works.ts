@@ -10,6 +10,7 @@ export const WORKS: IWork[] = [
     image: ProjectRJImg,
     imageAlt: 'Rosen Justice Website',
     title: 'Rosen Justice',
+    websiteLink: 'https://rosenjustice.com/',
     description:
       'A marketing website for injury lawyers. It uses Jamstack for the development. A marketing website for injury lawyers. It uses Jamstack for the development. A marketing website for injury lawyers. It uses Jamstack for the development. A marketing website for injury lawyers. It uses Jamstack for the development.',
     client: 'RaufTech',
@@ -21,6 +22,7 @@ export const WORKS: IWork[] = [
     image: ProjectOPVImg,
     imageAlt: 'Open Process Ventures',
     title: 'Open Process Ventures',
+    websiteLink: 'https://www.openprocessventures.com/',
     description: 'Complete website development using Next.js',
     client: 'RaufTech',
     role: 'Complete Website Development',
@@ -31,8 +33,8 @@ export const WORKS: IWork[] = [
     image: ProjectAngelImg,
     imageAlt: 'Angel',
     title: 'Angel',
-    description:
-      'A marketing and blog website development. It uses Jamstack for the development',
+    websiteLink: 'https://www.angelhvac.com/',
+    description: 'A marketing and blog website development. It uses Jamstack for the development',
     client: 'RaufTech',
     role: 'Complete Website Development',
     technologies: ['Jamstack', 'React', 'Wordpress CMS', 'Gatsby', 'GraphQL'],
@@ -41,11 +43,11 @@ export const WORKS: IWork[] = [
     id: 'fahrenheit',
     image: ProjectRJImg,
     imageAlt: 'Fahrenheit Website',
-    title: 'Rosen Justice',
-    description:
-      'A marketing website for injury lawyers. It uses Jamstack for the development.',
+    title: 'Fahrenheit',
+    websiteLink: 'https://www.fahrenheithvac.com/',
+    description: 'A marketing website for injury lawyers. It uses Jamstack for the development.',
     client: 'RaufTech',
     role: 'Complete Website Development',
     technologies: ['Jamstack', 'React', 'Wordpress CMS', 'Gatsby', 'GraphQL'],
   },
-]
+];

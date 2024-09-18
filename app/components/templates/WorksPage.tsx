@@ -1,24 +1,24 @@
-import React from 'react'
+import React from 'react';
 
-import Head from 'next/head'
+import Head from 'next/head';
 
-import { WORKS } from '@constant/works'
-import WorkCard from '@element/WorkCard'
-import Container from '@layout/Container'
-import Footer from '@module/Footer'
-import NavBar from '@module/NavBar'
+import { WORKS } from '@constant/works';
+import WorkCard from '@element/WorkCard';
+import Container from '@layout/Container';
+import Footer from '@module/Footer';
+import NavBar from '@module/NavBar';
 
-import styles from './WorksPage.module.scss'
+import styles from './WorksPage.module.scss';
 
 const WorksPage = () => {
-  const works = WORKS
+  const works = WORKS;
 
   return (
     <>
       <Head>
         <title>Hassan Tayyab | Contact Page</title>
-        <meta name="description" content="View all our works" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name='description' content='View all our works' />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Container>
         <header>
@@ -42,7 +42,7 @@ const WorksPage = () => {
         </footer>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default WorksPage
+export default WorksPage;

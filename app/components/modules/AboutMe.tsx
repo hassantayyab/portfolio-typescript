@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import Button from '@element/Button';
 
-import AboutMeImg from '../../../public/me.png';
+import AboutMeImg from '../../../public/me-2.jpg';
 import styles from './AboutMe.module.scss';
 
 const AboutMe = () => {
@@ -27,7 +27,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className={styles.image}>
-        <Image src={AboutMeImg} alt='About Me' />
+        <Image width={500} height={500} src={AboutMeImg} alt='About Me' />
       </div>
     </section>
   );

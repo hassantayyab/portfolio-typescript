@@ -39,12 +39,13 @@
   }
 
   .image {
-    max-width: 36rem;
     text-align: right;
-    margin: 0 -2rem;
-
-    @include breakpoint(lg) {
-      margin: 0 -1rem;
+    overflow: hidden;
+    img {
+      border-radius: 50%;
+      left: 16px;
+      right: 16px;
+      margin: 0 16px;
     }
   }
 }
